@@ -68,7 +68,7 @@ main {
   padding: 100px 0px;
   padding-bottom: 80px;
   min-height: 100vh;
-  background-image: url("../../images/fondo-presentation-portfolio.jpg");
+  background-image: url("../images/fondo-presentation-portfolio.jpg");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
 }
