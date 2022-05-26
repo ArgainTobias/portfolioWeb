@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1D1D1D;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+header {
+  width: 20vh;
+  position: fixed;
+}
+
+.side-menu {
+  background-color: #181818;
+  height: 100vh;
+}
+
+.side-menu .nombre {
+  background-color: black;
+  height: 180px;
+}
+
+.side-menu .nombre h2 {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 3rem;
+  color: #909096;
+}
+
+.side-menu ul {
+  text-align: center;
+  border-top: solid 1px #282828;
+  margin-top: 0.5rem;
+}
+
+.side-menu ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: solid 1px #282828;
+}
+
+.side-menu ul li a {
+  color: #909096;
+  font-size: 1.1rem;
+}
+
+.side-menu ul li a:hover {
+  text-decoration: none;
+  color: #08fdd8;
+}
+
+main {
+  margin-left: 20vh;
+}
+
+.presentation {
+  text-align: left;
+  padding: 100px 0px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  background-image: url("../../images/fondo-presentation-portfolio.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+}
+
+.presentation .presentation-container {
+  padding-left: 50px;
+  max-width: 40vw;
+}
+
+.presentation .presentation-container h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.presentation .presentation-container p {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #909096;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.presentation .presentation-container button {
+  color: #08fdd8;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  background-color: #1D1D1D;
+  border: solid 1px #08fdd8;
+}
+
+.presentation .presentation-container button:hover {
+  background-color: #16EFD8;
+  color: #1D1D1D;
+}
+
+.my-portfolio {
+  padding: 100px 0;
+  padding-bottom: 90px;
+}
+
+.my-portfolio .portfolio-container .portfolio-container-text {
+  margin-bottom: 40px;
+  padding: 0 30px;
+  padding-left: 80px;
+}
+
+.my-portfolio .portfolio-container .portfolio-container-text h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #08fdd8;
+  margin-bottom: 2rem;
+}
+
+.my-portfolio .portfolio-container .portfolio-container-text p {
+  color: white;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.my-portfolio .our-projects {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.my-portfolio .our-projects div {
+  margin: 0.3rem 0;
+}
+
+.my-portfolio .our-projects div img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-portfolio .our-projects div h3 {
+  color: white;
+  margin: 0.8rem 0;
+  margin-bottom: 1.2rem;
+}
+
+.my-portfolio .our-projects div a {
+  color: white;
+  border: solid 1px white;
+  padding: 0.5rem;
+}
+
+.my-portfolio .our-projects div a:hover {
+  text-decoration: none;
+  color: #08fdd8;
+}
+
+.my-skills {
+  padding: 0px 30px;
+  padding-bottom: 90px;
+}
+
+.my-skills .my-knowledge {
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+.my-skills .my-knowledge h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #08fdd8;
+}
+
+.my-skills .my-knowledge ul {
+  margin: 1.5rem 0 0 3rem;
+}
+
+.my-skills .my-knowledge ul li {
+  color: #909096;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  main {
+    width: auto;
+  }
+  .presentation {
+    text-align: center;
+    width: auto;
+    padding: 40px 0;
+  }
+  .presentation .presentation-container h1 {
+    font-size: 3.5rem;
+  }
+  .presentation .presentation-container p {
+    font-size: 1.2rem;
+  }
+  .portfolio-container .our-projects {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .my-skills .my-knowledge h2 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
