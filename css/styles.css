@@ -8,6 +8,7 @@
 
 body {
   background-color: #1D1D1D;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -25,15 +26,19 @@ header {
 }
 
 .side-menu .nombre {
-  background-color: black;
+  background-color: #181818;
   height: 180px;
 }
 
-.side-menu .nombre h2 {
+.side-menu .nombre a h2 {
   text-align: center;
   padding: 1rem;
   padding-top: 3rem;
   color: #909096;
+}
+
+.side-menu .nombre a:hover {
+  text-decoration: none;
 }
 
 .side-menu ul {
@@ -79,7 +84,7 @@ main {
 }
 
 .presentation .presentation-container h1 {
-  color: white;
+  color: #08fdd8;
   font-size: 4.5rem;
   font-weight: bold;
 }
@@ -108,11 +113,49 @@ main {
   text-align: center;
   background-color: #1D1D1D;
   border: solid 1px #08fdd8;
+  border-radius: 5px;
 }
 
 .presentation .presentation-container button:hover {
   background-color: #16EFD8;
   color: #1D1D1D;
+}
+
+.about-me {
+  padding: 100px 0;
+  padding-bottom: 90px;
+}
+
+.about-me .about-me-container {
+  margin-bottom: 40px;
+  padding: 0 30px;
+  padding-left: 80px;
+}
+
+.about-me .about-me-container h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #08fdd8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-me .about-me-container p {
+  color: white;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.about-me .about-me-container .my-studies {
+  margin-top: 3rem;
+}
+
+.about-me .about-me-container .my-studies h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #08fdd8;
+  margin-bottom: 2rem;
 }
 
 .my-portfolio {
@@ -131,6 +174,7 @@ main {
   font-size: 4rem;
   color: #08fdd8;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .my-portfolio .portfolio-container .portfolio-container-text p {
@@ -150,13 +194,14 @@ main {
 }
 
 .my-portfolio .our-projects div {
-  margin: 0.3rem 0;
+  margin: 1.2rem 0;
 }
 
 .my-portfolio .our-projects div img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .my-portfolio .our-projects div h3 {
@@ -169,6 +214,7 @@ main {
   color: white;
   border: solid 1px white;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .my-portfolio .our-projects div a:hover {
@@ -190,6 +236,7 @@ main {
   text-transform: capitalize;
   font-size: 4rem;
   color: #08fdd8;
+  text-align: center;
 }
 
 .my-skills .my-knowledge ul {
@@ -199,6 +246,41 @@ main {
 .my-skills .my-knowledge ul li {
   color: #909096;
   font-weight: bold;
+}
+
+footer {
+  margin-left: 20vh;
+  color: #909096;
+  background-color: #181818;
+}
+
+footer .redes {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .redes a {
+  color: #909096;
+}
+
+footer .redes a i {
+  font-size: 2rem;
+  margin: 0 1rem;
+  margin-top: 1.5rem;
+}
+
+footer .redes a:hover {
+  color: #08fdd8;
+}
+
+footer .copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-weight: bold;
+}
+
+footer .copy i {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 767px) {
@@ -215,6 +297,12 @@ main {
   }
   .presentation .presentation-container p {
     font-size: 1.2rem;
+  }
+  .about-me {
+    text-align: center;
+  }
+  .portfolio-container {
+    text-align: center;
   }
   .portfolio-container .our-projects {
     -ms-grid-columns: (1fr)[1];
