@@ -307,8 +307,11 @@ footer .copy i {
   .portfolio-container .our-projects div img {
     height: 160px;
   }
+  .my-skills .my-knowledge h2 {
+    font-size: 2.8rem;
+  }
   .my-skills .my-knowledge h3 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
   .my-skills .my-knowledge .technologies ul {
     margin: 1.5rem 0 0 5rem;
@@ -344,19 +347,28 @@ footer .copy i {
   .about-me {
     text-align: center;
   }
-  .portfolio-container {
+  .about-me .about-me-container h2 {
+    font-size: 3rem;
+  }
+  .about-me .about-me-container .my-studies h3 {
+    font-size: 2.5rem;
+  }
+  .my-portfolio .portfolio-container {
     text-align: center;
   }
-  .portfolio-container .our-projects {
+  .my-portfolio .portfolio-container .our-projects {
     margin-left: 1rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .portfolio-container .our-projects div img {
+  .my-portfolio .portfolio-container .our-projects div img {
     height: 160px;
   }
+  .my-portfolio .portfolio-container .portfolio-container-text h2 {
+    font-size: 3rem;
+  }
   .my-skills .my-knowledge h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
