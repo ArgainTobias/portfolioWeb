@@ -1,5 +1,5 @@
 header{
-    width: 20vh;
+    max-width: 20vh;
     position: fixed;
 }
 
@@ -16,6 +16,7 @@ header{
                 padding: 1rem;
                 padding-top: 3rem;
                 color: #909096;
+                text-transform: capitalize;
             }
         }
         a:hover{
@@ -83,7 +84,7 @@ main{
             position: relative;
             width: 100%;
             max-width: 220px;
-            height: 50px;
+            min-height: 50px;
             line-height: 50px;
             display: inline-block;
             text-align: center;
@@ -105,7 +106,7 @@ main{
         padding: 0 30px;
         padding-left: 80px;
         h2{
-            text-transform:capitalize;
+            // text-transform:capitalize;
             font-size: 4rem;
             color: #08fdd8;
             margin-bottom: 2rem;
@@ -140,7 +141,7 @@ main{
             padding: 0 30px;
             padding-left: 80px;
             h2{
-                text-transform:capitalize;
+                // text-transform:capitalize;
                 font-size: 4rem;
                 color: #08fdd8;
                 margin-bottom: 2rem;
@@ -195,16 +196,29 @@ main{
         padding-left: 50px;
         margin-bottom: 40px;
         h2{
-            text-transform:capitalize;
+            // text-transform:capitalize;
             font-size: 4rem;
             color: #08fdd8;
             text-align: center;
         }
-        ul{
-            margin: 1.5rem 0 0 3rem;
-            li{
-                color: #909096;
-                font-weight: bold;
+        h3{
+            text-transform:capitalize;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #08fdd8;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .technologies, .certificates{
+            margin-top: 3rem;
+        }
+        .technologies{
+            ul{
+                margin: 1.5rem 0 0 8rem;
+                li{
+                    color: #909096;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -241,17 +255,64 @@ footer{
     }
 }
 
+@media(max-width:1200px){
+    .portfolio-container{
+        text-align: center;
+        .our-projects{
+            margin-left: 1rem;
+            grid-template-columns: repeat(2,1fr);
+            div{
+                img{
+                    height: 160px;
+                }
+            }
+        }
+    }
+
+    .my-skills{
+        .my-knowledge{
+            h3{
+                font-size: 2.2rem;
+            }
+            .technologies{
+                ul{
+                    margin: 1.5rem 0 0 5rem;
+                }
+            }
+        }
+        
+    }
+}
+
 @media(max-width:767px){
+    header{
+        width: 10vh;
+        a{
+            font-size: 0.6rem;
+        }
+    }
+
+    .side-menu{
+        a{
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     main{
+        margin-left: 10vh;
         width: auto;
     }
+
     .presentation{
         text-align:center;
         width: auto;
         padding: 40px 0;
+        min-height: 70vh;
         .presentation-container{
             h1{
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
             p{
                 font-size: 1.2rem;
@@ -266,14 +327,24 @@ footer{
     .portfolio-container{
         text-align: center;
         .our-projects{
+            margin-left: 1rem;
             grid-template-columns: repeat(1,1fr);
+            div{
+                img{
+                    height: 160px;
+                }
+            }
         }
     }
     .my-skills{
         .my-knowledge{
             h2{
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
     }
+}
+
+footer{
+    margin-left: 10vh;
 }

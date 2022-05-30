@@ -13,10 +13,11 @@ body {
 
 h2 {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 header {
-  width: 20vh;
+  max-width: 20vh;
   position: fixed;
 }
 
@@ -35,6 +36,7 @@ header {
   padding: 1rem;
   padding-top: 3rem;
   color: #909096;
+  text-transform: capitalize;
 }
 
 .side-menu .nombre a:hover {
@@ -107,7 +109,7 @@ main {
   position: relative;
   width: 100%;
   max-width: 220px;
-  height: 50px;
+  min-height: 50px;
   line-height: 50px;
   display: inline-block;
   text-align: center;
@@ -133,7 +135,6 @@ main {
 }
 
 .about-me .about-me-container h2 {
-  text-transform: capitalize;
   font-size: 4rem;
   color: #08fdd8;
   margin-bottom: 2rem;
@@ -170,7 +171,6 @@ main {
 }
 
 .my-portfolio .portfolio-container .portfolio-container-text h2 {
-  text-transform: capitalize;
   font-size: 4rem;
   color: #08fdd8;
   margin-bottom: 2rem;
@@ -233,17 +233,29 @@ main {
 }
 
 .my-skills .my-knowledge h2 {
-  text-transform: capitalize;
   font-size: 4rem;
   color: #08fdd8;
   text-align: center;
 }
 
-.my-skills .my-knowledge ul {
-  margin: 1.5rem 0 0 3rem;
+.my-skills .my-knowledge h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #08fdd8;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.my-skills .my-knowledge ul li {
+.my-skills .my-knowledge .technologies, .my-skills .my-knowledge .certificates {
+  margin-top: 3rem;
+}
+
+.my-skills .my-knowledge .technologies ul {
+  margin: 1.5rem 0 0 8rem;
+}
+
+.my-skills .my-knowledge .technologies ul li {
   color: #909096;
   font-weight: bold;
 }
@@ -283,17 +295,48 @@ footer .copy i {
   margin-right: 0.5rem;
 }
 
+@media (max-width: 1200px) {
+  .portfolio-container {
+    text-align: center;
+  }
+  .portfolio-container .our-projects {
+    margin-left: 1rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-container .our-projects div img {
+    height: 160px;
+  }
+  .my-skills .my-knowledge h3 {
+    font-size: 2.2rem;
+  }
+  .my-skills .my-knowledge .technologies ul {
+    margin: 1.5rem 0 0 5rem;
+  }
+}
+
 @media (max-width: 767px) {
+  header {
+    width: 10vh;
+  }
+  header a {
+    font-size: 0.6rem;
+  }
+  .side-menu a h2 {
+    font-size: 1.5rem;
+  }
   main {
+    margin-left: 10vh;
     width: auto;
   }
   .presentation {
     text-align: center;
     width: auto;
     padding: 40px 0;
+    min-height: 70vh;
   }
   .presentation .presentation-container h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .presentation .presentation-container p {
     font-size: 1.2rem;
@@ -305,11 +348,19 @@ footer .copy i {
     text-align: center;
   }
   .portfolio-container .our-projects {
+    margin-left: 1rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .my-skills .my-knowledge h2 {
-    font-size: 3rem;
+  .portfolio-container .our-projects div img {
+    height: 160px;
   }
+  .my-skills .my-knowledge h2 {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  margin-left: 10vh;
 }
 /*# sourceMappingURL=styles.css.map */

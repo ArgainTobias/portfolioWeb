@@ -1,9 +1,10 @@
 const nodoProyects = document.querySelector(".our-projects");
-const nodoTechnolgies = document.querySelector(".my-knowledge");
+const nodoTechnolgies = document.querySelector(".technologies");
 
 const mostrarProyectos = () =>{
 
     proyects.forEach((proyect)=>{
+
         const contenedorInfo = document.createElement("div");
         contenedorInfo.innerHTML = `<div">
             <img src="${proyect.image}">
@@ -15,7 +16,6 @@ const mostrarProyectos = () =>{
 }
 
 const mostrarTecnologias = () =>{
-
 
     technologies.forEach((technology) => {
         const ulTechnologies = document.createElement("ul");
