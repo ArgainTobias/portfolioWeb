@@ -91,7 +91,7 @@ main {
   font-weight: bold;
   display: block;
   white-space: nowrap;
-  width: 11ch;
+  width: 8.5ch;
   -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
@@ -99,7 +99,7 @@ main {
 
 .presentation .presentation-container .developer {
   border-right: 4px solid;
-  width: 12.5ch;
+  width: 13.2ch;
 }
 
 @-webkit-keyframes typing {
