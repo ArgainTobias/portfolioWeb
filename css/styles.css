@@ -91,10 +91,14 @@ main {
   font-weight: bold;
   display: block;
   white-space: nowrap;
-  width: 8.5ch;
+  width: 5ch;
   -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+.presentation .presentation-container .tobias {
+  width: 8.5ch;
 }
 
 .presentation .presentation-container .developer {

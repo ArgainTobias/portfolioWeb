@@ -69,10 +69,13 @@ main{
             display: block;
             // border-right: 4px solid;
             white-space: nowrap;
-            width: 8.5ch;
+            width: 5ch;
 
             animation: typing 2s steps(25), blink .5s infinite step-end alternate;
             overflow: hidden;
+        }
+        .tobias{
+            width: 8.5ch;
         }
         .developer{
             border-right: 4px solid;
