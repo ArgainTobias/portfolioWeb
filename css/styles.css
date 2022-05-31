@@ -89,6 +89,41 @@ main {
   color: #08fdd8;
   font-size: 4.5rem;
   font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  width: 11ch;
+  -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
+          animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+.presentation .presentation-container .developer {
+  border-right: 4px solid;
+  width: 12.5ch;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .presentation .presentation-container p {

@@ -66,7 +66,30 @@ main{
             color: #08fdd8;
             font-size: 4.5rem;
             font-weight:bold;
+            display: block;
+            // border-right: 4px solid;
+            white-space: nowrap;
+            width: 11ch;
+
+            animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+            overflow: hidden;
         }
+        .developer{
+            border-right: 4px solid;
+            width: 12.5ch;
+            // animation-delay: 2s;
+
+        }
+
+        @keyframes typing {
+            from {width: 0;}
+        }
+
+        @keyframes blink {
+            50% {border-color: transparent;}
+        }
+
+        
         p{
             margin-top: 30px;
             margin-bottom: 15px;
