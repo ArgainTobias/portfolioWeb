@@ -22,6 +22,9 @@ header {
 }
 
 .side-menu {
+  border: solid 2px black;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
   background-color: #181818;
   height: 100vh;
 }
@@ -67,17 +70,17 @@ header {
 }
 
 main {
-  margin-left: 20vh;
+  margin-left: 20.5vh;
 }
 
 .presentation {
   text-align: left;
-  padding: 100px 0px;
+  padding: 90px 0px;
   padding-bottom: 80px;
   min-height: 100vh;
   background-image: url("../images/fondo-presentation-portfolio.jpg");
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
 }
 
 .presentation .presentation-container {
@@ -85,25 +88,31 @@ main {
   max-width: 40vw;
 }
 
-.presentation .presentation-container h1 {
+.presentation .presentation-container h2 {
+  text-transform: capitalize;
   color: #08fdd8;
   font-size: 4.5rem;
   font-weight: bold;
   display: block;
   white-space: nowrap;
   width: 5ch;
-  -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
-          animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
+          animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
 .presentation .presentation-container .tobias {
   width: 8.5ch;
+  -webkit-animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
+          animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
 }
 
 .presentation .presentation-container .developer {
-  border-right: 4px solid;
-  width: 13.2ch;
+  width: 14ch;
+  -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
+          animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
 }
 
 @-webkit-keyframes typing {
@@ -160,6 +169,8 @@ main {
 .presentation .presentation-container button:hover {
   background-color: #16EFD8;
   color: #1D1D1D;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .about-me {
@@ -233,7 +244,10 @@ main {
 }
 
 .my-portfolio .our-projects div {
-  margin: 1.2rem 0;
+  margin: 0.5rem;
+  background-color: #181818;
+  padding: 0.5rem 0;
+  border-radius: 10px;
 }
 
 .my-portfolio .our-projects div img {
@@ -303,6 +317,7 @@ footer {
   margin-left: 20vh;
   color: #909096;
   background-color: #181818;
+  border-top: solid 2px;
 }
 
 footer .redes {
@@ -359,16 +374,13 @@ footer .copy i {
 
 @media (max-width: 767px) {
   header {
-    width: 10vh;
-  }
-  header a {
-    font-size: 0.6rem;
+    display: none;
   }
   .side-menu a h2 {
     font-size: 1.5rem;
   }
   main {
-    margin-left: 10vh;
+    margin-left: 0;
     width: auto;
   }
   .presentation {
@@ -412,6 +424,6 @@ footer .copy i {
 }
 
 footer {
-  margin-left: 10vh;
+  margin-left: 0;
 }
 /*# sourceMappingURL=styles.css.map */

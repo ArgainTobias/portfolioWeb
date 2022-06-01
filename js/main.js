@@ -6,7 +6,7 @@ const mostrarProyectos = () =>{
     proyects.forEach((proyect)=>{
 
         const contenedorInfo = document.createElement("div");
-        contenedorInfo.innerHTML = `<div">
+        contenedorInfo.innerHTML = `<div>
             <img src="${proyect.image}">
             <h3>${proyect.name}</h3>
             <a href="${proyect.url}" target="_blank">View project</a>

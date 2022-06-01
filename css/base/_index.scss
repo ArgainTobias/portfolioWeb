@@ -4,10 +4,11 @@ header{
 }
 
 .side-menu{
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px black;
     background-color: #181818;
     height: 100vh;
     .nombre{
-        // background-color: #12121C;
         background-color: #181818;
         height: 180px;
         a{
@@ -47,41 +48,43 @@ header{
 }
 
 main{
-    margin-left: 20vh;
+    margin-left: 20.5vh;
 }
 
 .presentation{
     text-align: left;
-    padding: 100px 0px;
+    padding: 90px 0px;
     padding-bottom: 80px;
     min-height: 100vh;
     background-image: url("../images/fondo-presentation-portfolio.jpg");
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
 
     .presentation-container{
         padding-left: 50px;
         max-width: 40vw;
-        h1{
+        h2{
+            text-transform: capitalize;
             color: #08fdd8;
             font-size: 4.5rem;
             font-weight:bold;
             display: block;
-            // border-right: 4px solid;
             white-space: nowrap;
             width: 5ch;
 
-            animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+            animation: typing 1s steps(25), blink .5s infinite step-end alternate;
             overflow: hidden;
         }
         .tobias{
             width: 8.5ch;
+            animation: typing 1s steps(25), blink .5s infinite step-end alternate;
+            overflow: hidden;
         }
         .developer{
-            border-right: 4px solid;
-            width: 13.2ch;
-            // animation-delay: 2s;
-
+            // border-right: 4px solid;
+            width: 14ch;
+            animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+            overflow: hidden;
         }
 
         @keyframes typing {
@@ -121,9 +124,11 @@ main{
         button:hover{
             background-color: #16EFD8;
             color: #1D1D1D;
+            transition: all 1s ease;
         }
     }
 }
+
 .about-me{
     padding: 100px 0;
     padding-bottom: 90px;
@@ -189,7 +194,10 @@ main{
         gap: 0.5rem;
         margin: 2rem 0;
         div{
-            margin: 1.2rem 0;
+            margin: 0.5rem;
+            background-color: #181818;
+            padding: 0.5rem 0;
+            border-radius: 10px;
             img{
                 height: 200px;
                 object-fit: cover;
@@ -254,6 +262,7 @@ footer{
     margin-left: 20vh;
     color: #909096;
     background-color: #181818;
+    border-top: solid 2px;
     .redes{
         padding-top: 1rem;
         margin-bottom: 1rem;
@@ -315,10 +324,11 @@ footer{
 
 @media(max-width:767px){
     header{
-        width: 10vh;
-        a{
-            font-size: 0.6rem;
-        }
+        // width: 10vh;
+        // a{
+        //     font-size: 0.6rem;
+        // }
+        display: none;
     }
 
     .side-menu{
@@ -330,7 +340,7 @@ footer{
     }
 
     main{
-        margin-left: 10vh;
+        margin-left: 0;
         width: auto;
     }
 
@@ -348,6 +358,7 @@ footer{
             }
         }
     }
+
 
     .about-me{
         text-align: center;
@@ -393,5 +404,5 @@ footer{
 }
 
 footer{
-    margin-left: 10vh;
+    margin-left: 0;
 }
