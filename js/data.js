@@ -22,4 +22,17 @@ const proyects = [
     }
 ];
 
-technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JS", "BOOSTRAP", "SASS", "GIT"];
+technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT", "BOOSTRAP", "SASS", "GIT"];
+
+certificates = [
+    {
+        name:"Desarrollo Web",
+        url:"https://www.coderhouse.com/certificados/62266ac4a4452b008e6dc66f",
+        image:"./images/certificado-desarrollo-web.png"
+    },
+    {
+        name:"Javascript",
+        url:"https://www.coderhouse.com/certificados/6292c69d8e8f960026d58d8f",
+        image:"./images/certificado-javascript.png"
+    }
+]
