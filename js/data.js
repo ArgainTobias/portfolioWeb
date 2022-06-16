@@ -5,11 +5,11 @@ const proyects = [
         url:"https://argaintobias.github.io/proyectoFinalDW/",
         image:"images/scalaOptical.png"
     },
-    {
-        name:"Landing Page",
-        url:"https://argaintobias.github.io/landingPage/",
-        image:"images/landingPage.png"
-    },
+    // {
+    //     name:"Landing Page",
+    //     url:"https://argaintobias.github.io/landingPage/",
+    //     image:"images/landingPage.png"
+    // },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",

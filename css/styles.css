@@ -17,6 +17,10 @@ h2 {
   font-size: 4rem;
 }
 
+p {
+  color: #909096;
+}
+
 header {
   max-width: 20vh;
   position: fixed;
@@ -193,7 +197,6 @@ main {
 }
 
 .about-me .about-me-container p {
-  color: white;
   margin-bottom: 2rem;
   padding-left: 0.5rem;
 }
@@ -228,7 +231,6 @@ main {
 }
 
 .my-portfolio .portfolio-container .portfolio-container-text p {
-  color: white;
   margin-bottom: 2rem;
   padding-left: 0.5rem;
 }
@@ -252,9 +254,10 @@ main {
 }
 
 .my-portfolio .our-projects div img {
-  height: 200px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: .8rem;
   border-radius: 10px;
 }
 
