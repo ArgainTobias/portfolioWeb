@@ -239,8 +239,9 @@ main {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (0.4fr)[2];
+      grid-template-columns: repeat(2, 0.4fr);
+  place-content: center;
   gap: 0.5rem;
   margin: 2rem 0;
 }
@@ -257,8 +258,9 @@ main {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: .8rem;
+  margin: .8rem;
   border-radius: 10px;
+  border: solid 1px black;
 }
 
 .my-portfolio .our-projects div h4 {
@@ -384,16 +386,12 @@ main {
   margin-bottom: 2rem;
 }
 
-.contact div {
-  text-align: center;
-}
-
 .contact div form {
   text-align: center;
 }
 
 .contact div form input, .contact div form textarea {
-  width: 400px;
+  width: 70%;
   margin: .5rem;
   padding: .5rem;
   border-radius: 5px;
@@ -497,11 +495,11 @@ footer .copy i {
   }
   .presentation {
     text-align: center;
-    width: auto;
     padding: 40px 0;
-    min-height: 70vh;
+    width: auto;
+    min-height: 80vh;
   }
-  .presentation .presentation-container h1 {
+  .presentation .presentation-container h2 {
     font-size: 3rem;
   }
   .presentation .presentation-container p {
@@ -510,8 +508,11 @@ footer .copy i {
   .about-me {
     text-align: center;
   }
+  .about-me .about-me-container h2 {
+    font-size: 3rem;
+  }
   .about-me .about-me-container .my-studies h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .my-portfolio .portfolio-container {
     text-align: center;
@@ -527,8 +528,20 @@ footer .copy i {
   .my-portfolio .portfolio-container .portfolio-container-text h2 {
     font-size: 3rem;
   }
+  .my-skills .my-knowledge {
+    padding-left: 0;
+  }
   .my-skills .my-knowledge h2 {
     font-size: 3rem;
+  }
+  .contact .contact-container h2 {
+    font-size: 3rem;
+  }
+  .contact .contact-container div form input {
+    width: 90%;
+  }
+  .contact .contact-container div form textarea {
+    width: 90%;
   }
 }
 

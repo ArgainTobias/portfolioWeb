@@ -185,7 +185,8 @@ main{
     .our-projects{
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2,0.4fr);
+        place-content: center;
         gap: 0.5rem;
         margin: 2rem 0;
         div{
@@ -197,8 +198,9 @@ main{
             img{
                 height: 180px;
                 object-fit: cover;
-                padding: .8rem;
+                margin: .8rem;
                 border-radius: 10px;
+                border: solid 1px black;
             }
             h4{
                 color: #909096;
@@ -313,11 +315,10 @@ main{
         margin-bottom: 2rem;
     }
     div{
-        text-align: center;
         form{
             text-align: center;
             input, textarea{
-                width: 400px;
+                width: 70%;
                 margin: .5rem;
                 padding: .5rem;
                 border-radius: 5px;
@@ -398,6 +399,7 @@ footer{
 
     .my-skills{
         .my-knowledge{
+
             h2{
                 font-size: 2.8rem;
             }
@@ -438,11 +440,11 @@ footer{
 
     .presentation{
         text-align:center;
-        width: auto;
         padding: 40px 0;
-        min-height: 70vh;
+        width: auto;
+        min-height: 80vh;
         .presentation-container{
-            h1{
+            h2{
                 font-size: 3rem;
             }
             p{
@@ -455,9 +457,12 @@ footer{
     .about-me{
         text-align: center;
         .about-me-container{
+            h2{
+                font-size: 3rem;
+            }
             .my-studies{
                 h3{
-                    font-size: 2.5rem;
+                    font-size: 2.3rem;
                 }
             }
         }
@@ -485,8 +490,27 @@ footer{
     
     .my-skills{
         .my-knowledge{
+            padding-left: 0;
             h2{
                 font-size: 3rem;
+            }
+        }
+    }
+
+    .contact{
+        .contact-container{
+            h2{
+                font-size: 3rem;
+            }
+            div{
+                form{
+                    input{
+                        width: 90%;
+                    }
+                    textarea{
+                        width: 90%;
+                    }
+                }
             }
         }
     }

@@ -5,11 +5,6 @@ const proyects = [
         url:"https://argaintobias.github.io/proyectoFinalDW/",
         image:"images/scalaOptical.png"
     },
-    // {
-    //     name:"Landing Page",
-    //     url:"https://argaintobias.github.io/landingPage/",
-    //     image:"images/landingPage.png"
-    // },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",
@@ -19,10 +14,20 @@ const proyects = [
         name:"Perla Negra",
         url:"https://argaintobias.github.io/perlaNegra/",
         image:"images/perlaNegra.png"
+    },
+    {
+        name:"Weather App",
+        url:"https://transcendent-paprenjak-a4dfc4.netlify.app/",
+        image:"images/weatherApp.jpeg",
+    },
+    {
+        name:"Argain Shop",
+        url:"https://jolly-gingersnap-eabcc7.netlify.app/",
+        image:"images/argainShop.jpeg"
     }
 ];
 
-technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT", "BOOSTRAP", "SASS", "GIT"];
+technologies = ["HTML5 (INTERMEDIATE)", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT (INTERMEDIATE)", "BOOSTRAP", "SASS", "GIT", "PYTHON (BASIC)", "REACT JS (INTERMEDIATE)", "FIREBASE"];
 
 certificates = [
     {
