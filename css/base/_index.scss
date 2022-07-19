@@ -154,7 +154,6 @@ main{
                 font-weight: bold;
                 color: #08fdd8;
                 margin-bottom: 2rem;
-                // text-align: center;
             }
         }
     }
@@ -417,15 +416,9 @@ footer{
 }
 
 @media(max-width:767px){
-    header{
-        // width: 10vh;
-        // a{
-        //     font-size: 0.6rem;
-        // }
-        display: none;
-    }
 
     .side-menu{
+        display: none;
         a{
             h2{
                 font-size: 1.5rem;
@@ -434,7 +427,7 @@ footer{
     }
 
     main{
-        margin-left: 0;
+        margin: 0;
         width: auto;
     }
 

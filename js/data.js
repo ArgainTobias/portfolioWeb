@@ -1,19 +1,14 @@
 const proyects = [
 
     {
-        name:"Scala Optical",
-        url:"https://argaintobias.github.io/proyectoFinalDW/",
-        image:"images/scalaOptical.png"
-    },
-    {
-        name:"E-Commerce",
-        url:"https://argaintobias.github.io/proyectoFinalJS/",
-        image:"images/e-commerce.png"
-    },
-    {
         name:"Perla Negra",
         url:"https://argaintobias.github.io/perlaNegra/",
         image:"images/perlaNegra.png"
+    },
+    {
+        name:"Argain Shop",
+        url:"https://jolly-gingersnap-eabcc7.netlify.app/",
+        image:"images/argainShop.jpeg"
     },
     {
         name:"Weather App",
@@ -21,10 +16,15 @@ const proyects = [
         image:"images/weatherApp.jpeg",
     },
     {
-        name:"Argain Shop",
-        url:"https://jolly-gingersnap-eabcc7.netlify.app/",
-        image:"images/argainShop.jpeg"
-    }
+        name:"E-Commerce",
+        url:"https://argaintobias.github.io/proyectoFinalJS/",
+        image:"images/e-commerce.png"
+    },
+    {
+        name:"Scala Optical",
+        url:"https://argaintobias.github.io/proyectoFinalDW/",
+        image:"images/scalaOptical.png"
+    },
 ];
 
 technologies = ["HTML5 (INTERMEDIATE)", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT (INTERMEDIATE)", "BOOSTRAP", "SASS", "GIT", "PYTHON (BASIC)", "REACT JS (INTERMEDIATE)", "FIREBASE"];

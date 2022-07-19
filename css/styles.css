@@ -483,14 +483,14 @@ footer .copy i {
 }
 
 @media (max-width: 767px) {
-  header {
+  .side-menu {
     display: none;
   }
   .side-menu a h2 {
     font-size: 1.5rem;
   }
   main {
-    margin-left: 0;
+    margin: 0;
     width: auto;
   }
   .presentation {
