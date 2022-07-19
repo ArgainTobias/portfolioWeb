@@ -48,6 +48,10 @@ header {
   font-size: 1.8rem;
 }
 
+.side-menu .nombre a h2:hover {
+  color: #08fdd8;
+}
+
 .side-menu .nombre a:hover {
   text-decoration: none;
 }
@@ -105,6 +109,11 @@ main {
   -webkit-animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+.presentation .presentation-container h2 span:hover {
+  color: #909096;
+  text-shadow: 0 0 10px #909096;
 }
 
 .presentation .presentation-container .tobias {

@@ -3,7 +3,7 @@ const proyects = [
     {
         name:"Perla Negra",
         url:"https://argaintobias.github.io/perlaNegra/",
-        image:"images/perlaNegra.png"
+        image:"images/perlaNegra.jpeg"
     },
     {
         name:"Argain Shop",

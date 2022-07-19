@@ -20,6 +20,9 @@ header{
                 text-transform: capitalize;
                 font-size: 1.8rem;
             }
+            h2:hover{
+                color: #08fdd8;
+            }
         }
         a:hover{
             text-decoration: none;
@@ -75,6 +78,10 @@ main{
 
             animation: typing 1s steps(25), blink .5s infinite step-end alternate;
             overflow: hidden;
+            span:hover{
+                color: #909096;
+                text-shadow: 0 0 10px #909096;
+            }
         }
         .tobias{
             width: 8.5ch;
