@@ -26,6 +26,14 @@ header {
   position: fixed;
 }
 
+header label {
+  display: none;
+}
+
+header #check {
+  display: none;
+}
+
 .side-menu {
   border: solid 2px black;
   -webkit-box-shadow: 5px 5px 10px black;
@@ -292,6 +300,10 @@ main {
   color: #08fdd8;
 }
 
+.my-portfolio .our-projects div p {
+  margin-top: 1rem;
+}
+
 .my-skills {
   padding: 0px 30px;
   padding-bottom: 90px;
@@ -492,6 +504,23 @@ footer .copy i {
 }
 
 @media (max-width: 767px) {
+  header {
+    max-width: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+  header label {
+    display: block;
+    position: fixed;
+  }
+  header label i {
+    font-size: 60px;
+    cursor: pointer;
+    color: #08fdd8;
+  }
+  header #check:checked + .side-menu {
+    display: block;
+  }
   .side-menu {
     display: none;
   }

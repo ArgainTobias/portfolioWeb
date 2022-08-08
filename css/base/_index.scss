@@ -1,6 +1,14 @@
 header{
     max-width: 20vh;
     position: fixed;
+
+    label{
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
 }
 
 .side-menu{
@@ -87,12 +95,14 @@ main{
             width: 8.5ch;
             animation: typing 1s steps(25), blink .5s infinite step-end alternate;
             overflow: hidden;
+            // animation-delay: .5s;
         }
         .developer{
             // border-right: 4px solid;
             width: 14ch;
             animation: typing 2s steps(25), blink .5s infinite step-end alternate;
             overflow: hidden;
+            // animation-delay: 2s;
         }
 
         @keyframes typing {
@@ -224,6 +234,9 @@ main{
             a:hover{
                 text-decoration: none;
                 color: #08fdd8;
+            }
+            p{
+                margin-top: 1rem;
             }
         }
         
@@ -423,6 +436,27 @@ footer{
 }
 
 @media(max-width:767px){
+
+    header{
+        max-width: 100%;
+        width: 100%;
+        z-index: 100;
+        
+        
+        label{
+            display: block;
+            position: fixed;
+            i{
+                font-size: 60px;
+                cursor: pointer;
+                color: #08fdd8;
+            }
+        }
+
+        #check:checked + .side-menu{
+            display: block;
+        }
+    }
 
     .side-menu{
         display: none;

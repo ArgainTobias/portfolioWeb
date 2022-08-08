@@ -22,11 +22,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
+      <label for="check">
+        <i class="material-symbols-outlined">menu</i>
+      </label>
+      <input type="checkbox" id="check">
       <nav class="side-menu">
         <div class="nombre">
           <a href="#">
@@ -56,14 +60,16 @@
       </section>
       <section class="about-me" id="about-me">
         <div class="about-me-container">
-          <h2>About me</h2>
-          <p>
-            My name is Tobias Argain, I'm 21 years old and I live in Buenos
-            Aires, Argentina. I started studying web development at the end of
-            2021 and I loved it to the point that, since then, I try to learn
-            something new every day and never stop training myself.
+          <div data-aos="flip-left">
+            <h2>About me</h2>
+            <p>
+              My name is Tobias Argain, I'm 21 years old and I live in Buenos
+              Aires, Argentina. I started studying web development at the end of
+              2021 and I loved it to the point that, since then, I try to learn
+              something new every day and never stop training myself.
+          </div>
           </p>
-          <div class="my-studies">
+          <div class="my-studies" data-aos="flip-left">
             <h3>My studies</h3>
             <p>
               My first steps in web development was through a basic HTML5 course
@@ -87,7 +93,7 @@
 
       <section class="my-portfolio" id="portfolio">
         <div class="portfolio-container">
-          <div class="portfolio-container-text">
+          <div class="portfolio-container-text" data-aos="flip-left">
             <h2>My portfolio</h2>
             <p>
               A small gallery of recent projects chosen by me. I've done them
@@ -96,16 +102,16 @@
             </p>
           </div>
 
-          <div class="our-projects"></div>
+          <div class="our-projects" data-aos="flip-left"></div>
         </div>
       </section>
 
       <section class="my-skills" id="skills">
-        <div class="my-knowledge">
+        <div class="my-knowledge" data-aos="flip-left">
           <h2>My knowledge and skills</h2>
-          <div class="row">
+          <div class="row" data-aos="flip-left">
             <div class="technologies col-md-6 col-sm-12">
-              <h3>technologies</h3>
+              <h3>skills</h3>
             </div>
             <div class="certificates col-md-6 col-sm-12">
               <h3>certificates</h3>
@@ -114,18 +120,17 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact" id="contact" data-aos="flip-left">
         <div class="contact-container">
           <h2>Contact me!</h2>
           <div>
-            <form>
-              <input type="text" required placeholder="Nombre completo" />
+            <form action="https://formsubmit.co/30f32e51428773942614afac21375991 " method="POST">
+              <input type="text" name="nombre" required placeholder="Nombre completo" />
               <br />
-              <input type="email" required placeholder="Correo electronico" />
+              <input type="email" name="email" required placeholder="Correo electronico" />
               <br />
               <textarea
-                name=""
-                id=""
+                name="comentarios"
                 cols="30"
                 rows="10"
                 required
@@ -133,6 +138,7 @@
               ></textarea>
               <br />
               <button>Enviar consulta</button>
+              <input type="hidden" name="_next" value="https://argaintobias.github.io/portfolioWeb/">
             </form>
           </div>
         </div>
@@ -174,5 +180,11 @@
       src="https://kit.fontawesome.com/88911ad60e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1500,
+      });
+    </script>
   </body>
 </html>

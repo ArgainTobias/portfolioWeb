@@ -10,7 +10,9 @@ const mostrarProyectos = () =>{
         contenedorInfo.innerHTML = `
             <img src="${proyect.image}">
             <h4>${proyect.name}</h4>
-            <a href="${proyect.url}" target="_blank">View project</a>`;
+            <a href="${proyect.url}" target="_blank">View project</a>
+            <p>${proyect.description}</p>   
+        `;
         nodoProyects.appendChild(contenedorInfo);
     })
 }
