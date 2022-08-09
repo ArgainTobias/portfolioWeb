@@ -3,11 +3,11 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 body {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   overflow-x: hidden;
 }
 
@@ -92,18 +92,30 @@ main {
 }
 
 .presentation {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 90px 0px;
   padding-bottom: 80px;
   min-height: 100vh;
-  background-image: url("../images/fondo-presentation-portfolio.jpg");
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.7)), to(rgba(24, 24, 24, 0.7))), url("../../images/technology.gif");
+  background: linear-gradient(rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.7)), url("../../images/technology.gif");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.7)), to(rgba(5, 7, 12, 0.7))), url("../../images/technology.gif");
+  background: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url("../../images/technology.gif");
+  background-size: cover;
+  background-position: center;
+  border-bottom: solid 2px black;
 }
 
 .presentation .presentation-container {
   padding-left: 50px;
   max-width: 40vw;
+  position: relative;
+  z-index: 2;
 }
 
 .presentation .presentation-container h2 {
@@ -125,13 +137,14 @@ main {
 }
 
 .presentation .presentation-container .tobias {
-  width: 8.5ch;
+  width: 10ch;
   -webkit-animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
 .presentation .presentation-container .developer {
+  border-right: 4px solid;
   width: 14ch;
   -webkit-animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 2s steps(25), blink 0.5s infinite step-end alternate;
@@ -207,6 +220,65 @@ main {
   padding-left: 80px;
 }
 
+.about-me .about-me-container .contenedor-img img {
+  height: 250px;
+  border-radius: 10px;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  margin-top: 1rem;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies h5 {
+  color: #909096;
+  text-transform: uppercase;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies .iconos-hobbies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies .iconos-hobbies i {
+  font-size: 2rem;
+  color: #E6E1D5;
+  margin-bottom: .8rem;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies .iconos-hobbies i:hover {
+  color: #08fdd8;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies .hobbies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  width: 70%;
+  margin: auto;
+}
+
+.about-me .about-me-container .contenedor-img .contenedor-hobbies .hobbies p {
+  font-size: 1.2rem;
+}
+
+.about-me .about-me-container .contenedor-texto {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
 .about-me .about-me-container h2 {
   color: #08fdd8;
   margin-bottom: 2rem;
@@ -250,6 +322,7 @@ main {
 .my-portfolio .portfolio-container .portfolio-container-text p {
   margin-bottom: 2rem;
   padding-left: 0.5rem;
+  text-align: center;
 }
 
 .my-portfolio .our-projects {
@@ -512,11 +585,15 @@ footer .copy i {
   header label {
     display: block;
     position: fixed;
+    background-color: #08fdd8;
+    border: solid 1px #181818;
+    border-radius: 5px;
+    margin: .5rem;
   }
   header label i {
     font-size: 60px;
     cursor: pointer;
-    color: #08fdd8;
+    color: #181818;
   }
   header #check:checked + .side-menu {
     display: block;
