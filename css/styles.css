@@ -135,7 +135,7 @@ main {
 }
 
 .presentation .presentation-container .tobias {
-  width: 10ch;
+  width: 13ch;
   -webkit-animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
           animation: typing 1s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;

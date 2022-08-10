@@ -4,37 +4,37 @@ const proyects = [
         name:"Perla Negra",
         url:"https://argaintobias.github.io/perlaNegra/",
         image:"images/perlaNegra.jpeg",
-        description:"Created with HTML, CSS, BOOTSTRAP and JS"
+        description:"Creado con HTML, CSS, BOOTSTRAP and JS"
     },
     {
         name:"Argain Shop",
         url:"https://jolly-gingersnap-eabcc7.netlify.app/",
         image:"images/argainShop.jpeg",
-        description:"Created with CSS, SASS and REACT JS"
+        description:"Creado con CSS, SASS and REACT JS"
     },
     {
         name:"Weather App",
         url:"https://transcendent-paprenjak-a4dfc4.netlify.app/",
         image:"images/weatherApp.jpeg",
-        description:"Created with CSS, SASS and REACT JS"
+        description:"Creado con CSS, SASS and REACT JS"
     },
     {
         name:"Tocado Game",
         url:"https://argaintobias.github.io/tocadoGame/",
         image:"images/tocadoGame.jpeg",
-        description:"Created with HTML, CSS and JS"
+        description:"Creado con HTML, CSS and JS"
     },
     {
         name:"Calculator",
-        url:"",
+        url:"https://calcula3.000webhostapp.com/",
         image:"images/calculator.png",
-        description:"Created with HTML, CSS, and JS"
+        description:"Creado con HTML, CSS, and JS"
     },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",
         image:"images/e-commerce.png",
-        description:"Created with HTML, CSS, and JS"
+        description:"Creado con HTML, CSS, and JS"
     },
     // {
     //     name:"Scala Optical",
@@ -63,7 +63,7 @@ certificates = [
         image:"./images/certificado-react.png"
     },
     {
-        name:"Frontend career development",
+        name:"Carrera de Desarrollo Front-end",
         url:"https://www.coderhouse.com/certificados/62e431fad7bef6001953d9ab",
         image:"./images/certificado-fontend.png"
     }

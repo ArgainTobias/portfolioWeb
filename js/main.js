@@ -10,7 +10,7 @@ const mostrarProyectos = () =>{
         contenedorInfo.innerHTML = `
             <img src="${proyect.image}">
             <h4>${proyect.name}</h4>
-            <a href="${proyect.url}" target="_blank">View project</a>
+            <a href="${proyect.url}" target="_blank">Ver proyecto</a>
             <p>${proyect.description}</p>   
         `;
         nodoProyects.appendChild(contenedorInfo);
@@ -34,7 +34,7 @@ const mostrarCertificados = () =>{
         contenedorCertificate.innerHTML = `
             <img src="${certificate.image}">
             <h4>${certificate.name}</h4>
-            <a href="${certificate.url}" target="_blank">View certificate</a>`;
+            <a href="${certificate.url}" target="_blank">Ver certificado</a>`;
         nodoCertificates.appendChild(contenedorCertificate);
     })
 }
