@@ -493,6 +493,34 @@ footer{
     }
 }
 
+@media(max-width:992px){
+
+    .my-portfolio{
+        .portfolio-container{
+            text-align: center;
+            .our-projects{
+                margin-left: 1rem;
+                grid-template-columns: repeat(1,.5fr);
+                div{
+                    img{
+                        height: 160px;
+                    }
+                }
+            }
+        }
+    }
+
+    .my-skills{
+        .my-knowledge{
+            .certificates{
+                place-content: center;
+                grid-template-columns: repeat(1,.5fr);
+            }
+        }
+    }
+
+}
+
 @media(max-width:767px){
 
     header{
@@ -565,16 +593,6 @@ footer{
 
     .my-portfolio{
         .portfolio-container{
-            text-align: center;
-            .our-projects{
-                margin-left: 1rem;
-                grid-template-columns: repeat(1,1fr);
-                div{
-                    img{
-                        height: 160px;
-                    }
-                }
-            }
             .portfolio-container-text{
                 h2{
                     font-size: 3rem;
@@ -586,8 +604,17 @@ footer{
     .my-skills{
         .my-knowledge{
             padding-left: 0;
+            text-align: center;
             h2{
                 font-size: 3rem;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    margin: 0;
+                    padding: .2rem 0;
+                    width: 85%;
+                }
             }
         }
     }

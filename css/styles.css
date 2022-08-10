@@ -574,6 +574,25 @@ footer .copy i {
   }
 }
 
+@media (max-width: 992px) {
+  .my-portfolio .portfolio-container {
+    text-align: center;
+  }
+  .my-portfolio .portfolio-container .our-projects {
+    margin-left: 1rem;
+    -ms-grid-columns: (0.5fr)[1];
+        grid-template-columns: repeat(1, 0.5fr);
+  }
+  .my-portfolio .portfolio-container .our-projects div img {
+    height: 160px;
+  }
+  .my-skills .my-knowledge .certificates {
+    place-content: center;
+    -ms-grid-columns: (0.5fr)[1];
+        grid-template-columns: repeat(1, 0.5fr);
+  }
+}
+
 @media (max-width: 767px) {
   header {
     max-width: 100%;
@@ -626,25 +645,21 @@ footer .copy i {
   .about-me .about-me-container .my-studies h3 {
     font-size: 2.3rem;
   }
-  .my-portfolio .portfolio-container {
-    text-align: center;
-  }
-  .my-portfolio .portfolio-container .our-projects {
-    margin-left: 1rem;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .my-portfolio .portfolio-container .our-projects div img {
-    height: 160px;
-  }
   .my-portfolio .portfolio-container .portfolio-container-text h2 {
     font-size: 3rem;
   }
   .my-skills .my-knowledge {
     padding-left: 0;
+    text-align: center;
   }
   .my-skills .my-knowledge h2 {
     font-size: 3rem;
+  }
+  .my-skills .my-knowledge ul li {
+    list-style: none;
+    margin: 0;
+    padding: .2rem 0;
+    width: 85%;
   }
   .contact .contact-container h2 {
     font-size: 3rem;
