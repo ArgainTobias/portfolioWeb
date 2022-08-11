@@ -133,8 +133,8 @@ main{
             text-decoration: none;
             margin-top: 20px;
             position: relative;
-            width: 100%;
-            max-width: 220px;
+            // width: 100%;
+            width: auto;
             min-height: 50px;
             line-height: 50px;
             display: inline-block;
@@ -142,6 +142,7 @@ main{
             background-color:#1D1D1D ;
             border:solid 1px #08fdd8;
             border-radius: 5px;
+            padding: 0 .5rem;
         }
         a:hover{
             background-color: #16EFD8;
@@ -385,11 +386,15 @@ main{
     margin: 0 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    width: auto;
+    display: grid;
+    place-content: center;
 
     h2{
         text-align: center;
         color: #08fdd8;
         margin-bottom: 2rem;
+        width: 80%;
     }
     div{
         form{
@@ -606,7 +611,7 @@ footer{
             padding-left: 0;
             text-align: center;
             h2{
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             ul{
                 li{
@@ -622,7 +627,7 @@ footer{
     .contact{
         .contact-container{
             h2{
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             div{
                 form{

@@ -189,8 +189,7 @@ main {
   text-decoration: none;
   margin-top: 20px;
   position: relative;
-  width: 100%;
-  max-width: 220px;
+  width: auto;
   min-height: 50px;
   line-height: 50px;
   display: inline-block;
@@ -198,6 +197,7 @@ main {
   background-color: #1D1D1D;
   border: solid 1px #08fdd8;
   border-radius: 5px;
+  padding: 0 .5rem;
 }
 
 .presentation .presentation-container a:hover {
@@ -470,12 +470,17 @@ main {
   margin: 0 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .contact h2 {
   text-align: center;
   color: #08fdd8;
   margin-bottom: 2rem;
+  width: 80%;
 }
 
 .contact div form {
@@ -653,7 +658,7 @@ footer .copy i {
     text-align: center;
   }
   .my-skills .my-knowledge h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .my-skills .my-knowledge ul li {
     list-style: none;
@@ -662,7 +667,7 @@ footer .copy i {
     width: 85%;
   }
   .contact .contact-container h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .contact .contact-container div form input {
     width: 90%;
