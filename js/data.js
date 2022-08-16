@@ -1,40 +1,46 @@
 const proyects = [
 
     {
-        name:"Perla Negra",
-        url:"https://argaintobias.github.io/perlaNegra/",
-        image:"images/perlaNegra.jpeg",
-        description:"Creado con HTML, CSS, BOOTSTRAP and JS"
+        name:"La Casa del Sabor",
+        url:"https://lacasadelsabor.netlify.app/",
+        image:"images/laCasaDelSabor.png",
+        description:"Creado con HTML, CSS, y JS"
     },
     {
         name:"Argain Shop",
         url:"https://jolly-gingersnap-eabcc7.netlify.app/",
         image:"images/argainShop.jpeg",
-        description:"Creado con CSS, SASS and REACT JS"
+        description:"Creado con CSS, SASS y REACT JS"
     },
     {
         name:"Weather App",
         url:"https://transcendent-paprenjak-a4dfc4.netlify.app/",
         image:"images/weatherApp.jpeg",
-        description:"Creado con CSS, SASS and REACT JS"
+        description:"Creado con CSS, SASS y REACT JS"
     },
     {
         name:"Tocado Game",
         url:"https://argaintobias.github.io/tocadoGame/",
         image:"images/tocadoGame.jpeg",
-        description:"Creado con HTML, CSS and JS"
+        description:"Creado con HTML, CSS y JS"
     },
     {
         name:"Calculator",
         url:"https://calcula3.000webhostapp.com/",
         image:"images/calculator.png",
-        description:"Creado con HTML, CSS, and JS"
+        description:"Creado con HTML, CSS, y JS"
     },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",
         image:"images/e-commerce.png",
-        description:"Creado con HTML, CSS, and JS"
+        description:"Creado con HTML, CSS, y JS"
+    },
+    {
+        name:"Perla Negra",
+        url:"https://argaintobias.github.io/perlaNegra/",
+        image:"images/perlaNegra.jpeg",
+        description:"Creado con HTML, CSS, BOOTSTRAP y JS"
     },
     // {
     //     name:"Scala Optical",
