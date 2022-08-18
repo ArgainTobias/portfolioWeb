@@ -166,8 +166,6 @@ main{
                 border-radius: 10px;
             }
             .contenedor-hobbies{
-                display: grid;
-                grid-template-columns: repeat(1,1fr);
                 margin-top: 1rem;
 
                 h5{
@@ -190,17 +188,6 @@ main{
 
                     i:hover{
                         color: #08fdd8;
-                    }
-
-                }
-                .hobbies{
-                    display: grid;
-                    grid-template-columns: repeat(4,1fr);
-                    place-content: center;
-                    width: 70%;
-                    margin: auto;
-                    p{
-                        font-size: 1.2rem;
                     }
 
                 }
