@@ -220,14 +220,9 @@ main {
 
 .about-me .about-me-container .contenedor-img img {
   height: 250px;
-  border-radius: 10px;
 }
 
 .about-me .about-me-container .contenedor-img .contenedor-hobbies {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
   margin-top: 1rem;
 }
 
@@ -255,20 +250,6 @@ main {
 
 .about-me .about-me-container .contenedor-img .contenedor-hobbies .iconos-hobbies i:hover {
   color: #08fdd8;
-}
-
-.about-me .about-me-container .contenedor-img .contenedor-hobbies .hobbies {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  place-content: center;
-  width: 70%;
-  margin: auto;
-}
-
-.about-me .about-me-container .contenedor-img .contenedor-hobbies .hobbies p {
-  font-size: 1.2rem;
 }
 
 .about-me .about-me-container .contenedor-texto {

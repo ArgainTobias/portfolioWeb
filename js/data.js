@@ -26,7 +26,7 @@ const proyects = [
     },
     {
         name:"Calculator",
-        url:"https://calcula3.000webhostapp.com/",
+        url:"https://calcula2ra.netlify.app/",
         image:"images/calculator.png",
         description:"Creado con HTML, CSS, y JS"
     },
@@ -38,7 +38,7 @@ const proyects = [
     },
     {
         name:"Perla Negra",
-        url:"https://argaintobias.github.io/perlaNegra/",
+        url:"https://perlanegrakayak.com/",
         image:"images/perlaNegra.jpeg",
         description:"Creado con HTML, CSS, BOOTSTRAP y JS"
     },
