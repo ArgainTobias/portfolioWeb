@@ -50,7 +50,7 @@ const proyects = [
     // }
 ];
 
-technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT", "BOOSTRAP", "SASS", "GIT", "PYTHON", "REACT JS", "FIREBASE"];
+technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT", "BOOTSTRAP", "SASS", "GIT", "PYTHON", "REACT JS", "FIREBASE"];
 
 certificates = [
     {
