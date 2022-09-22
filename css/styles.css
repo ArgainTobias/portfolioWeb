@@ -306,19 +306,21 @@ main {
 
 .my-portfolio .our-projects {
   text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (0.4fr)[2];
-      grid-template-columns: repeat(2, 0.4fr);
-  place-content: center;
-  gap: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 2rem 0;
 }
 
 .my-portfolio .our-projects div {
   margin: 0.5rem;
   background-color: #282828;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border: solid 2px #909096;
   border-radius: 10px;
 }
@@ -327,14 +329,14 @@ main {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: .8rem;
+  margin: .6rem;
   border-radius: 10px;
   border: solid 1px black;
 }
 
 .my-portfolio .our-projects div h4 {
   color: #909096;
-  margin: 0.8rem 0;
+  margin: 0.6rem 0;
   margin-bottom: 1.2rem;
   font-weight: bold;
 }
@@ -401,35 +403,47 @@ main {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  place-content: center;
 }
 
 .my-skills .my-knowledge .certificates h3 {
   margin-bottom: 2rem;
 }
 
-.my-skills .my-knowledge .certificates div {
+.my-skills .my-knowledge .certificates .contenedor-certificados {
   margin: 1rem;
   background-color: #282828;
   border: solid 2px #909096;
   border-radius: 10px;
-  padding: 1.5rem;
 }
 
-.my-skills .my-knowledge .certificates div img {
+.my-skills .my-knowledge .certificates .contenedor-certificados .img {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  position: relative;
   height: 200px;
+}
+
+.my-skills .my-knowledge .certificates .contenedor-certificados .img img {
+  height: 200px;
+  width: 300px;
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
-.my-skills .my-knowledge .certificates div h4 {
-  color: #909096;
-  margin-bottom: 1rem;
-  font-weight: bold;
+.my-skills .my-knowledge .certificates .contenedor-certificados .img .ver {
+  position: absolute;
+  background-color: rgba(5, 7, 12, 0.7);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  visibility: hidden;
 }
 
-.my-skills .my-knowledge .certificates div a {
+.my-skills .my-knowledge .certificates .contenedor-certificados .img .ver a {
   color: #909096;
   border: solid 1px #909096;
   border-radius: 5px;
@@ -438,9 +452,13 @@ main {
   font-weight: bold;
 }
 
-.my-skills .my-knowledge .certificates div a:hover {
+.my-skills .my-knowledge .certificates .contenedor-certificados .img .ver a:hover {
   text-decoration: none;
   color: #08fdd8;
+}
+
+.my-skills .my-knowledge .certificates .contenedor-certificados .img:hover .ver {
+  visibility: visible;
 }
 
 .contact {

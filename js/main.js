@@ -31,10 +31,14 @@ const mostrarCertificados = () =>{
     certificates.forEach((certificate)=>{
 
         const contenedorCertificate = document.createElement("div");
+        contenedorCertificate.classList.add("contenedor-certificados")
         contenedorCertificate.innerHTML = `
-            <img src="${certificate.image}">
-            <h4>${certificate.name}</h4>
-            <a href="${certificate.url}" target="_blank">Ver certificado</a>`;
+            <div class="img">
+                <img src="${certificate.image}">
+                <div class="ver">
+                    <a href="${certificate.url}" target="_blank">Ver certificado</a>
+                </div>
+            </div>`;
         nodoCertificates.appendChild(contenedorCertificate);
     })
 }
