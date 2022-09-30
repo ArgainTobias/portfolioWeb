@@ -71,11 +71,6 @@ main{
     padding: 90px 0px;
     padding-bottom: 80px;
     min-height: 100vh;
-    background: linear-gradient(rgba(5,7,12,0.7),rgba(5,7,12,0.7)), url("../../images/technology.gif");
-    background-size: cover;
-    background-position: center;
-    border-bottom: solid 2px black;
-
     .presentation-container{
         padding-left: 50px;
         max-width: 40vw;
@@ -83,14 +78,13 @@ main{
         z-index: 2;
         h2{
             text-transform: capitalize;
-            color: #08fdd8;
+            color: transparent;
             font-size: 4.5rem;
             font-weight:bold;
             display: block;
             white-space: nowrap;
             width: 5ch;
-
-            animation: typing 1s steps(25), blink .5s infinite step-end alternate;
+            animation: typing .8s steps(25) forwards, blink .5s infinite step-end alternate;
             overflow: hidden;
             span:hover{
                 color: #909096;
@@ -98,19 +92,28 @@ main{
             }
         }
         .tobias{
-            width: 13ch;
-            animation: typing 1s steps(25), blink .5s infinite step-end alternate;
+            width: 10ch;
+            animation: typing .8s steps(25) forwards, blink .5s infinite step-end alternate;
             overflow: hidden;
+            animation-delay: .8s;
         }
         .developer{
             border-right: 4px solid;
             width: 14ch;
-            animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+            animation: typing 1s steps(25) forwards, blink .5s infinite step-end alternate;
             overflow: hidden;
+            animation-delay: 1.6s;
         }
 
         @keyframes typing {
-            from {width: 0;}
+            from {
+                width: 0;
+                color: #08fdd8;
+            }
+            100%{
+                color: #08fdd8;
+            }
+            
         }
 
         @keyframes blink {
@@ -133,7 +136,6 @@ main{
             text-decoration: none;
             margin-top: 20px;
             position: relative;
-            // width: 100%;
             width: auto;
             min-height: 50px;
             line-height: 50px;
@@ -155,10 +157,12 @@ main{
 .about-me{
     padding: 100px 0;
     padding-bottom: 90px;
+    background-color: #1d1d1d;
+    border-top: solid 2px #909096;
+    border-bottom: solid 2px #909096;
     .about-me-container{
         margin-bottom: 40px;
         padding: 0 30px;
-        padding-left: 80px;
 
         .contenedor-img{
             img{
@@ -228,7 +232,6 @@ main{
         .portfolio-container-text{
             margin-bottom: 40px;
             padding: 0 30px;
-            padding-left: 80px;
             h2{
                 color: #08fdd8;
                 margin-bottom: 2rem;
@@ -248,14 +251,9 @@ main{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        // display: grid;
-        // grid-template-columns: repeat(2,0.4fr);
-        // place-content: center;
-        // gap: 0.5rem;
         margin: 2rem 0;
         div{
             margin: 0.5rem;
-            // margin-left: .7rem;
             background-color: #282828;
             padding: 1rem 0;
             border: solid 2px #909096;
@@ -293,10 +291,13 @@ main{
 }
 
 .my-skills{
-    padding: 0px 30px;
-    padding-bottom: 90px;
+    padding: 3rem 30px;
+    padding-bottom: 70px;
+    border-top: solid 2px #909096;
+    border-bottom: solid 2px #909096;
+    background-color: #282828;
     .my-knowledge{
-        padding-left: 50px;
+        // padding-left: 50px;
         margin-bottom: 40px;
         h2{
             color: #08fdd8;
@@ -313,22 +314,23 @@ main{
         .technologies, .certificates{
             margin-top: 3rem;
         }
-        .technologies{
+        .technologies{            
             h3{
                 margin-bottom: 3rem;
             }
-            ul{
-                margin: 1.5rem 0 0 8rem;
-                li{
-                    color: #909096;
-                    font-weight: bold;
+            .container-technologies{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .div-icono-tech{
+                    margin: 1rem;
+                    
                 }
             }
         }
         .certificates{
             text-align: center;
             display: grid;
-            // grid-template-columns: repeat(1,.5fr);
             place-content: center;
 
             h3{
@@ -337,10 +339,8 @@ main{
 
             .contenedor-certificados{
                 margin: 1rem;
-                background-color: #282828;
-                border: solid 2px #909096;
-                border-radius: 10px;
                 .img{
+                    border-radius: 10px;
                     display: grid;
                     place-content: center;
                     position: relative;
@@ -348,7 +348,6 @@ main{
                     img{
                         height: 200px;
                         width: 300px;
-                        // width: 15vw;
                         border-radius: 10px;
                         // object-fit: cover;
                     }
@@ -361,9 +360,11 @@ main{
                         display: grid;
                         place-content: center;
                         visibility: hidden;
+                        border-radius: 10px;
                         a{
                             color: #909096;
-                            border: solid 1px #909096;
+                            border: solid 1px #282828;
+                            background: #282828;
                             border-radius: 5px;
                             padding: 0.5rem;
                             margin-bottom: 1rem;
@@ -380,11 +381,7 @@ main{
                         visibility: visible;
                     }
                 }
-                // h4{
-                    //     color: #909096;
-                //     margin-bottom: 1rem;
-                //     font-weight: bold;
-                // }
+
             }
             
         }
@@ -392,9 +389,9 @@ main{
 }
 
 .contact{
-    border:solid 2px #909096;
-    border-radius: 10px;
-    background-color: #282828;
+    // border:solid 2px #909096;
+    // background-color: #282828;
+    // border-radius: 10px;
     padding: 2rem;
     margin: 0 2rem;
     margin-top: 1rem;
@@ -471,7 +468,6 @@ footer{
         text-align: center;
         padding-top: 1.5rem;
         font-weight: bold;
-        // font-size: 0.8rem;
         i{
             margin-right: 0.5rem;
         }
@@ -501,11 +497,6 @@ footer{
             h3{
                 font-size: 2.3rem;
             }
-            .technologies{
-                ul{
-                    margin: 1.5rem 0 0 5rem;
-                }
-            }
         }
         
     }
@@ -530,6 +521,15 @@ footer{
 
     .my-skills{
         .my-knowledge{
+            .technologies{
+                .container-technologies{
+                    .div-icono-tech{
+                        i{
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+            }
             .certificates{
                 place-content: center;
                 grid-template-columns: repeat(1,.5fr);
@@ -539,7 +539,7 @@ footer{
 
 }
 
-@media(max-width:767px){
+@media(max-width:768px){
 
     header{
         max-width: 100%;
@@ -624,14 +624,6 @@ footer{
             text-align: center;
             h2{
                 font-size: 2.5rem;
-            }
-            ul{
-                li{
-                    list-style: none;
-                    margin: 0;
-                    padding: .2rem 0;
-                    width: 85%;
-                }
             }
         }
     }

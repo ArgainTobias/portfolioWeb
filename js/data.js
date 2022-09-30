@@ -19,17 +19,23 @@ const proyects = [
         description:"Creado con CSS, SASS y REACT JS"
     },
     {
+        name:"Login",
+        url:"https://logint.netlify.app/",
+        image:"images/logint.png",
+        description:"Creado con HTML, CSS, y JS",
+    },
+    {
         name:"Tocado Game",
         url:"https://argaintobias.github.io/tocadoGame/",
         image:"images/tocadoGame.jpeg",
         description:"Creado con HTML, CSS y JS"
     },
-    {
-        name:"Calculator",
-        url:"https://calcula2ra.netlify.app/",
-        image:"images/calculator.png",
-        description:"Creado con HTML, CSS, y JS"
-    },
+    // {
+    //     name:"Calculator",
+    //     url:"https://calcula2ra.netlify.app/",
+    //     image:"images/calculator.png",
+    //     description:"Creado con HTML, CSS, y JS"
+    // },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",
@@ -42,15 +48,50 @@ const proyects = [
         image:"images/perlaNegra.jpeg",
         description:"Creado con HTML, CSS, BOOTSTRAP y JS"
     },
-    // {
-    //     name:"Scala Optical",
-    //     url:"https://argaintobias.github.io/proyectoFinalDW/",
-    //     image:"images/scalaOptical.png",
-    //     description:"Created with HTML and CSS"
-    // }
 ];
 
-technologies = ["HTML5", "CSS (FLEXBOX, GRIDS)", "JAVASCRIPT", "BOOTSTRAP", "SASS", "GIT", "PYTHON", "REACT JS", "FIREBASE"];
+technologies = [
+    {
+        nombre:"HTML5",
+        icono:"images/html-logo.png",
+        color:"#E44D26"
+    },
+    {
+        nombre:"CSS3",
+        icono:"images/css-logo.png",
+        color:"#026FBE"
+    },
+    {
+        nombre:"Javascript",
+        icono:"images/javascript-logo.png",
+        color:"#E7C833"
+    },
+    {
+        nombre:"React Js",
+        icono:"images/react-logo.png",
+        color:"#03D7FE"
+    },
+    {
+        nombre:"SASS",
+        icono:"images/sass-logo.png",
+        color:"#CC6798"
+    },
+    {
+        nombre:"Bootstrap",
+        icono:"images/bootstrap-logo.png",
+        color:"#8512FA"
+    },
+    {
+        nombre:"Firebase",
+        icono:"images/firebase-logo.png",
+        color:"#8512FA"
+    },
+    {
+        nombre:"GIT",
+        icono:"images/git-logo.png",
+        color:"#F05133"
+    },
+]
 
 certificates = [
     {
