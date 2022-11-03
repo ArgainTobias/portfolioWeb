@@ -1,16 +1,22 @@
 const proyects = [
-
+    
     {
-        name:"La Casa del Sabor",
-        url:"https://lacasadelsabor.netlify.app/",
-        image:"images/laCasaDelSabor.png",
-        description:"Creado con HTML, CSS, y JS"
+        name:"Mov App",
+        url:"https://mov-apps.netlify.app/",
+        image:"images/movApp.png",
+        description:"Creado con CSS, SASS y REACT JS"
     },
     {
         name:"Argain Shop",
         url:"https://jolly-gingersnap-eabcc7.netlify.app/",
         image:"images/argainShop.jpeg",
         description:"Creado con CSS, SASS y REACT JS"
+    },
+    {
+        name:"La Casa del Sabor",
+        url:"https://lacasadelsabor.netlify.app/",
+        image:"images/laCasaDelSabor.png",
+        description:"Creado con HTML, CSS, y JS"
     },
     {
         name:"Weather App",
@@ -30,12 +36,6 @@ const proyects = [
         image:"images/tocadoGame.jpeg",
         description:"Creado con HTML, CSS y JS"
     },
-    // {
-    //     name:"Calculator",
-    //     url:"https://calcula2ra.netlify.app/",
-    //     image:"images/calculator.png",
-    //     description:"Creado con HTML, CSS, y JS"
-    // },
     {
         name:"E-Commerce",
         url:"https://argaintobias.github.io/proyectoFinalJS/",
